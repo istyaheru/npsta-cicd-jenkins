@@ -9,5 +9,11 @@ pipeline {
                 echo "Hello ${params.NAME}"
             }
         }
+
+        stage('List all files') {
+            steps {
+                ls -a
+            }
+        }
     }
 }
