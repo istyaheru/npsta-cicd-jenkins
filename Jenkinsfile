@@ -10,9 +10,9 @@ pipeline {
             }
         }
 
-        stage('List all files') {
+        stage('Check node version') {
             steps {
-                ls -a
+                sh("node --version")
             }
         }
     }
